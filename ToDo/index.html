@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>ToDo</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Mi primer ToDo list
+        <img src="./assets/img/check-lg.svg" alt="" />
+      </h1>
+    </header>
+    <main>
+      <form>
+        <h2>Ingresa tareas</h2>
+        <label for="">
+          Nombre de la tarea:
+          <input id="nombre_tarea" type="text" />
+        </label>
+        <label for="">
+          Descripcion de la tarea:
+          <textarea id="descripcion_tarea"></textarea>
+        </label>
+        <label for="">
+          Fecha de la tarea:
+          <input id="fecha_tarea" type="date" />
+        </label>
+        <div>
+          <button id="agregar_tarea" onclick="javascript:obtenerValores()">Agregar nueva tarea</button>
+        </div>
+      </form>
+      <div>
+        <h2>Tareas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Actividad</th>
+              <th>Fecha</th>
+              <th>Realizada</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpo_tabla">
+            <!-- <tr>
+              <td class="check">1</td>
+              <td class="check">sdfsdfsdf</td>
+              <td class="check">dsfsdfsdf</td>
+              <td class="check">12/05/2023</td>
+              <td>
+                <input type="checkbox" />
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>sdfsdfsdf</td>
+              <td>dsfsdfsdf</td>
+              <td>12/05/2023</td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>Todos los derechos reservados &reg;</footer>
+    <script src="./assets/js/todo-list/funciones.js"></script>
+  </body>
+</html>
